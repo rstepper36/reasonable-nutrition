@@ -1,0 +1,54 @@
+/* Reset some default styles */
+body, h1, h2, p, article {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic layout and styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Additional custom styles */
+  /* Add your custom styles here */
+  

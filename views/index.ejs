@@ -1,0 +1,33 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reasonable Nutrition Blog</title>
+  <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reasonable Nutrition Blog</h1>
+  </header>
+  <main>
+    <% posts.forEach((post) => { %>
+      <article>
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+        <form action="/<%= post.id %>/edit" method="GET">
+          <button type="submit">Edit</button>
+        </form>
+        <form class="delete-form" action="/<%= post.id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </article>
+    <% }) %>
+  </main>
+  <footer>
+    <a href="posts/new">Add New Post</a>
+  </footer>
+  <script src="../public/scripts/scripts.js"></script>
+</body>
+</html>
