@@ -26,7 +26,6 @@ git clone https://github.com/rstepper36/reasonable-nutrition
 2. Install the dependencies:
 npm install body-parser ejs express mysql2 sequelize
 
-
 3. Set up the MySQL database:
 - Create a new MySQL database.
 - Update the `config/database.js` file with your database connection details.
